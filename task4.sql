@@ -1,4 +1,5 @@
 
+#solution 2
 SELECT 
     authors.first_name, 
     books.book_name, 
@@ -9,6 +10,8 @@ SELECT
                         WHERE MONTHNAME(publish_date) = 'January' 
                         AND YEAR(publish_date) = '2021');   
 
+
+#solution 2
 
 SELECT 
     authors.first_name, 
