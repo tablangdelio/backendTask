@@ -12,7 +12,7 @@
                 
         public function getData() {
            $arrData = [];
-           foreach( $this->data as $key => $value) {
+           foreach( $this->data as $value) {
                 $arrData[] = [
                     'id' => $value->id,
                     'firstName' => $value->first_name,
@@ -29,6 +29,6 @@
     
     $data  = json_decode(file_get_contents('MOCK_DATA.json'), false);
     $objData = new ApiUtils($data);
-    print_r($objData->getData());
+    print_r( $objData->getData() );
   
 ?>
